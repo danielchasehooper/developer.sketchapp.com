@@ -15,6 +15,10 @@ Represents a fill on a layer. Can be either a color or gradient fill.
 
 A color fill (0), gradient (1) or pattern (4). Other values make no sense and can lead to unpredictable behaviour
 
+### colorGeneric
+
+An [MSColor](/reference/MSColor/) object that will be used it the `fillType` is set to fill.
+
 ### gradient
 
 An [MSGradient](/reference/MSGradient/) object that will only be used if the `fillType` is set to a gradient.
