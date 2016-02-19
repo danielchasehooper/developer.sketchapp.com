@@ -33,7 +33,7 @@ Creates an MSColor instance from an [NSColor](/reference/NSColor/)
 var blackColor = MSColor.colorWithNSColor(NSColor.colorWithGray(0.0))
 ```
 
-### hexValue:
+### hexValue
 
 Returns the hexadecimal value of an MSColor instance:
 
@@ -42,7 +42,7 @@ var color = MSColor.colorWithRed_green_blue_alpha(1.0,0.4,0.0,1.0)
 log(color.hexValue()) // ff6600, the nicest color ever
 ```
 
-### hue:, saturation:, brightness:
+### hue, saturation, brightness
 
 Each one of these methods returns the corresponding value of a given MSColor:
 
@@ -53,6 +53,22 @@ log(color.hue()) // 0.06666666666666667
 log(color.saturation()) // 1
 log(color.brightness()) // 1
 ```
+
+### red, green, blue
+
+Each one of these methods returns the corresponding value of a given MSColor.
+
+```
+var color = [MSColor colorWithRed: 1 green: 0.4 blue: 0 alpha: 1.0];
+
+log([color red]) // 1
+log([color green]) // 0.4
+log([color blue]) // 0.0
+```
+
+### alpha
+
+The alpha value of a given MSColor.
 
 ### hexValueForRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue
 
